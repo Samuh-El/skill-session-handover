@@ -1,0 +1,12 @@
+{
+  "total_residuals": 0,
+  "residual_pointers": [
+    {
+      "id": "res_001",
+      "relative_path": "external_storage_m/observations/res_001.txt",
+      "category": "EXCEPTION_LOG|TOOL_FAILURE|CORNER_CASE",
+      "trigger_condition": "<when_recipient_model_should_read_this_file>",
+      "summary": "<one_line_summary_of_observation>"
+    }
+  ]
+}

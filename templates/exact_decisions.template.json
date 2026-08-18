@@ -1,0 +1,33 @@
+{
+  "protocol_version": "1.0.0",
+  "task_identifier": "<task_or_project_slug>",
+  "primary_goal": "<clear_unambiguous_task_goal>",
+  "current_milestone": "<current_active_phase_or_step>",
+  "binding_decisions": [
+    {
+      "decision_id": "dec_001",
+      "summary": "<exact_binding_decision>",
+      "rationale": "<technical_reasoning>",
+      "source": "<origin_message_or_turn_id>"
+    }
+  ],
+  "rejected_alternatives": [
+    {
+      "rejected_id": "rej_001",
+      "approach": "<rejected_architecture_or_strategy>",
+      "rejection_reason": "<why_this_failed_or_was_discarded>",
+      "verdict": "PERMANENTLY_REJECTED"
+    }
+  ],
+  "active_constraints": [
+    "<mandatory_constraint_1>",
+    "<mandatory_constraint_2>"
+  ],
+  "unresolved_issues": [
+    {
+      "issue_id": "issue_001",
+      "description": "<pending_open_question_or_bug>",
+      "proposed_direction": "<next_recommended_investigation_step>"
+    }
+  ]
+}

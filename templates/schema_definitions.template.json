@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExactDecisionsSchema",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "primary_goal",
+    "binding_decisions",
+    "rejected_alternatives",
+    "active_constraints",
+    "unresolved_issues"
+  ],
+  "properties": {
+    "protocol_version": { "type": "string" },
+    "primary_goal": { "type": "string" },
+    "current_milestone": { "type": "string" },
+    "binding_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["decision_id", "summary", "rationale", "source"],
+        "properties": {
+          "decision_id": { "type": "string" },
+          "summary": { "type": "string" },
+          "rationale": { "type": "string" },
+          "source": { "type": "string" }
+        }
+      }
+    },
+    "rejected_alternatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rejected_id", "approach", "rejection_reason", "verdict"],
+        "properties": {
+          "rejected_id": { "type": "string" },
+          "approach": { "type": "string" },
+          "rejection_reason": { "type": "string" },
+          "verdict": { "type": "string" }
+        }
+      }
+    },
+    "active_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "unresolved_issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["issue_id", "description"],
+        "properties": {
+          "issue_id": { "type": "string" },
+          "description": { "type": "string" },
+          "proposed_direction": { "type": "string" }
+        }
+      }
+    }
+  }
+}
