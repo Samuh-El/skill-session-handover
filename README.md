@@ -69,6 +69,8 @@ Upon execution, the agent completes an eight-phase workflow covering context fre
 ## Repository Structure
 
 - [`SKILL.md`](SKILL.md): Core operational specification, frontmatter metadata, and execution checklists.
+- [`docs/USE_MANUAL_ENG.md`](docs/USE_MANUAL_ENG.md): Step-by-step user manual and trigger scenarios (English).
+- [`docs/MANUAL DE USO_SPA.md`](docs/MANUAL%20DE%20USO_SPA.md): Step-by-step user manual and trigger scenarios (Spanish).
 - [`reference.md`](reference.md): Mathematical formulations, proof structures, and analytical derivations.
 - [`examples.md`](examples.md): Schema definitions, structural templates, and memory account ledgers.
 - [`templates/`](templates/): Standardized JSON and CSV templates for state record generation.
